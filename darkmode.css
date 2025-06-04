@@ -1,0 +1,140 @@
+:root{
+  --base-color: #F9CBAB;
+  --header: #FFE3D0;
+  --text-color: #16120F;
+  --text-hover: #D29870;
+  --base-text: #16120F;
+  --nav: #D29870;
+  --nav-but: #F9CBAB;
+  --card: #FFE3D0;
+  --pole: #F3E8E1;
+  --button-color: #e3a97a;
+  --primary-color: #3a435d;
+}
+.darkmode{
+  --base-color: #16120F;
+  --header: #867C75;
+  --text-color: #16120F;
+  --text-hover: #F9CBAB;
+  --base-text: #FFE3D0;
+  --nav-but: #21150C;
+  --nav: #302D2B;
+  --card: #302D2B;
+  --pole: #5B544E;
+  --button-color: #020100;
+  --primary-color: #3a435d;
+}
+
+body{
+    background-color: var(--base-color);
+    position: relative;
+
+}
+
+header{
+    background-color: var(--header);
+}
+
+footer{
+    background-color: var(--header);
+    background-image: url("./img/coffee.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 200px
+}
+
+.bottom{
+    background-image: url("./img/bean.png");
+    background-position: center;
+    background-size: auto 150px;
+}
+
+nav.menu a{
+    color: var(--text-color);
+}
+
+nav.menu a:hover {
+  color: var(--text-hover);
+}
+
+.content{
+    color: var(--base-text)
+}
+
+.dropdown-content {
+    background-color: var(--nav);
+}
+
+.dropdown-content a:hover {
+    background-color: var(--nav-but);
+
+}
+
+.card{
+    background-color: var(--card);
+}
+
+.card p{
+    color: var(--base-text);
+}
+
+.cafe-form{
+    background-color: var(--card);
+}
+
+.cafe-form h2{
+    color: var(--base-text);
+}
+
+.cafe-form label{
+      color: var(--base-text);
+}
+
+.cafe-form input,
+.cafe-form textarea{
+    background-color: var(--pole);
+    border: 2px solid var(--base-color);
+    color: var(--base-text);
+}
+
+.cafe-form input:focus,
+.cafe-form textarea:focus {
+  border-color: var(--base-text);
+  outline: none;
+
+}
+
+.cafe-form button {
+  background: var(--base-color);
+  color: var(--base-text);
+}
+
+.cafe-form button:hover {
+  background: var(--button-color);
+}
+
+#theme-switch{
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--base-variant);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+#theme-switch svg{
+  fill: var(--primary-color);
+}
+#theme-switch svg:last-child{
+  display: none;
+}
+.darkmode #theme-switch svg:first-child{
+  display: none;
+}
+.darkmode #theme-switch svg:last-child{
+  display: block;
+}

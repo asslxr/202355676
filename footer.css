@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Codystar-Light';
+    src: url("./fonts/ImperialScript-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer {
+    color: #2d1c12;
+    padding: 40px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200px;
+    max-width: 1000px;
+    margin-bottom: 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    max-width: 500px;
+}
+    
+.footer-section h3 {
+    font-family: 'Codystar-Light', sans-serif;
+    font-size: 40px;
+    margin-bottom: 1rem;
+    color: #16120F;
+}
+    
+.footer-section p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #16120F;
+    font-size: 18px;
+}
+    
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+    
+.footer-social a {
+    color: #16120F;;
+    font-size: 1.8rem;
+    transition: color 0.2s;    
+}
+    
+.footer-social a:hover {
+    color: #e3a97a;
+}
+    
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #16120F;
+    opacity: 0.8;
+}
+
+.contacts{
+    list-style-type: none;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    margin-left: 30px;
+}
+
+.contacts li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contacts a{
+    text-decoration: none;
+    color: #16120F;
+    font-size: 15px;
+}
+
+.contacts a:hover {
+    color: #e3a97a;
+}
