@@ -1,0 +1,442 @@
+:root{
+  --base-color: #F9CBAB;
+  --header: #FFE3D0;
+  --text-color: #16120F;
+  --text-hover: #D29870;
+  --base-text: #16120F;
+  --nav: #D29870;
+  --nav-but: #F9CBAB;
+  --card: #FFE3D0;
+  --pole: #F3E8E1;
+  --button-color: #e3a97a;
+  --primary-color: #3a435d;
+  --grad1: #D29870;
+  --grad2: #AA6A3E;
+  --grad3: #eacbb7;
+  --grad4: #d4b08b;
+}
+.darkmode{
+  --base-color: #16120F;
+  --header: #867C75;
+  --text-color: #16120F;
+  --text-hover: #F9CBAB;
+  --base-text: #FFE3D0;
+  --nav-but: #21150C;
+  --nav: #302D2B;
+  --card: #302D2B;
+  --pole: #5B544E;
+  --button-color: #020100;
+  --primary-color: #3a435d;
+  --grad1: #302D2B;
+  --grad2: #120903;
+  --grad3: #867C75;
+  --grad4: #302D2B;
+}
+
+@font-face {
+    font-family: 'Codystar-Light';
+    src: url("./fonts/ImperialScript-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--base-color);
+    position: relative;
+    
+}
+
+header{
+    background-color: var(--header);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: flex-start;
+
+}
+
+.menu_logo a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 80px;
+    margin-top: 15px;
+}
+.head_font{
+    font-family: 'Codystar-Light', sans-serif;
+    font-size: 70px;
+    margin-left: 30px;
+}
+
+.title{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 30px;
+    gap: 20px;
+    font-size: 15px;
+    color: var(--base-text);
+}
+
+.desc{
+    font-size: 20px;
+    color: var(--base-text);
+    width: 80%;
+    height: 100px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.set{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto 50px auto;
+    
+}
+
+
+
+.coffee-menu {
+  background: var(--header);
+  border-radius: 18px;
+  padding: 32px 24px;
+  width: 500px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  font-family: 'Georgia', serif;
+}
+
+.menu-item {
+  margin-bottom: 34px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--base-text);
+  position: relative;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.menu-badge {
+  display: inline-block;
+  font-size: 13px;
+  background: #f3ede7;
+  color: #a97d55;
+  border-radius: 12px;
+  padding: 2px 10px;
+  margin-bottom: 6px;
+  margin-right: 8px;
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 2px;
+}
+
+.menu-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2d180b;
+  font-family: inherit;
+}
+
+.menu-price {
+  font-size: 17px;
+  color: #2d180b;
+  font-weight: 600;
+  margin-left: 12px;
+  font-family: inherit;
+}
+
+
+
+.booking-form {
+  width: 320px;
+  background: var(--header);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  padding: 20px 20px 16px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.booking-fields {
+  border-radius: 12px 12px 0 0;
+  border: 1px solid var(--base-text);
+  padding: 0;
+  overflow: hidden;
+  background: var(--header);
+}
+
+.booking-row {
+  display: flex;
+  border-bottom: 1px solid var(--base-text);
+}
+
+.booking-row:last-child {
+  border-bottom: none;
+}
+
+.booking-col {
+  flex: 1 1 0;
+  padding: 16px 12px;
+  border-right: 1px solid var(--base-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.booking-col:last-child {
+  border-right: none;
+}
+
+.booking-col-full {
+  width: 100%;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  color: #2d180b;
+  margin-bottom: 4px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+input[type="date"], input[type="time"], select {
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: #2d180b;
+  margin-top: 2px;
+}
+
+select {
+  appearance: none;
+  background: url("data:image/svg+xml;charset=UTF-8,<svg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 1L6 6L11 1' stroke='%23999' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat right 8px center/16px 10px;
+  padding-right: 24px;
+  cursor: pointer;
+}
+
+.bop{
+    color: #2d180b;
+    font-size: 30px;
+    font-family: 'Codystar-Light', sans-serif;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+.booking-btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 14px 0;
+  background: linear-gradient(90deg, var(--grad1) 0%, var(--grad2) 100%);
+  color: var(--base-text);
+  font-size: 18px;
+  border: none;
+  border-radius: 24px;
+  font-weight: bold;
+  cursor: pointer;  
+  transition: background 0.2s;
+}
+
+.booking-btn:hover {
+  background: linear-gradient(90deg, var(--grad3) 0%, var(--grad4) 100%);
+}
+
+
+
+
+
+
+
+.review-badge {
+  border-radius: 18px;
+  padding: 28px 24px 22px 24px;
+  max-width: 340px;
+  margin: 32px auto;
+  text-align: center;
+  background-color: var(--base-color);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.badge-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+
+.rating-number {
+  font-size: 64px;
+  font-weight: bold;
+  margin: 0 16px;
+  color: var(--base-text);
+  letter-spacing: -2px;
+}
+
+.laurel {
+  width: 80px;
+  height: auto;
+  opacity: 0.8;
+}
+
+.laurel.left {
+  transform: rotateY(180deg);
+  margin-right: -2px;
+}
+
+.laurel.right {
+  margin-left: -2px;
+}
+
+.badge-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--base-text);
+}
+
+.badge-desc {
+  font-size: 15px;
+  color: var(--base-text);
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+.loc{
+    margin-top: 30px;
+    height: 200px;
+    text-align: center;
+}
+
+.loc a{
+    text-decoration: none;
+    color: var(--base-text);
+    font-weight: bold;
+    font-size: 20px;
+}
+.map-container {
+    width: 600px;
+    max-width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    margin: 0 auto;
+}
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+}
+
+.naver{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    margin-left: 49%;
+    background-color: black;
+    margin-bottom: 50px;
+}
+
+.bottom{
+    background-image: url("./img/bean.png");    
+    background-position: center;
+    background-size: auto 150px;
+}
+
+
+footer{
+    background-color: var(--header);
+    background-image: url("./img/coffee.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 200px
+}
+
+
+#theme-switch{
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--base-variant);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+#theme-switch svg{
+  fill: var(--primary-color);
+}
+#theme-switch svg:last-child{
+  display: none;
+}
+.darkmode #theme-switch svg:first-child{
+  display: none;
+}
+.darkmode #theme-switch svg:last-child{
+  display: block;
+}
+
+
+
+.carousel {
+    position: relative;
+    width: 500px;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+    border-radius: 15px;
+}
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s;
+  width: 100%;
+}
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+}
+.carousel-item img {
+  width: 500px;
+  height: 450px;
+  object-fit: cover;
+  
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  background: rgba(0,0,0,0.3);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+  z-index: 2;
+  
+}
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
